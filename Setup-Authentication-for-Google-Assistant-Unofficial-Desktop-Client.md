@@ -96,9 +96,55 @@
 
 ![Type Gmail account email address for authentication](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/2_14_add-users-sidebar.png)
 
-# Final steps...
+# Setting authentication in the app
 
-Now, you are all done. You can now go to "**Settings**" in the *Google Assistant Unofficial Desktop Client* and set the "**Key File Path**" to the path where you have kept the "**OAuth 2.0 Credentials**" and save the settings. You will be asked to reload the Assistant after which you will be presented with "*Get Tokens!*" screen which will automatically save your tokens. After this, you can use your Google Assistant.
+1. Run and launch the **Google Assistant Unofficial Desktop Client** app
+
+2. Click on the "**Settings**" button in the top-left corner of the application
+
+3. Under the "**Authentication**" section, set the "**Key File Path**" to the path where you have kept the "**OAuth 2.0 Credentials**" and leave the "**Saved Tokens Path**" empty. Now click on "**Save**" button
+
+![Authentication: Set Key File Path](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_1_assist-settings-auth.png)
+
+4. You will be prompted to automatically create a path for "*Saved Tokens Path*". Click on "**Automatically set a path**"
+
+![Automatically set a Saved Tokens Path](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_2_assist-set-tokens-path.png)
+
+5. You will be asked to reload the Assistant. Click on "**Relaunch Assistant**" button
+
+![Relaunch assistant](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_3_assist-relaunch-assistant.png)
+
+6. Now, you will be presented with the "*Get Token!*" screen. An authentication page will be opened in your default browser
+
+![Get Tokens screen](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_4_assist-get-tokens.png)
+
+7. Select the preferred Gmail account to authenticate
+
+![Choose Gmail account to authenticate](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_5_choose-gmail-account.png)
+
+8. You might come across the following warning: "**Google hasn't verified this app**". Since the project is created by you, this should be safe to proceed with. Click on "**Advanced**"
+
+!["Google hasn't verified this app" warning screen](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_6_app-not-verified-err.png)
+
+9. Click on "**Go to project-xxxxxx (unsafe)**"
+
+![Go to project link](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_7_app-not-verified-advanced.png)
+
+10. Now grant permission to the project by clicking on "**Allow**"
+
+![Project Permission](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_8_grant-app-permission.png)
+
+11. You will now be presented with the authorization code screen. Click on the *copy* button
+
+![Authorization Code Screen](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_9_copy-auth-code.png)
+
+12. Switch to the application and paste the code in the respective field. Now click on "**Submit**"
+
+![Paste Authorization Code](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/3_10_assist-paste-code.png)
+
+13. You will be prompted to relaunch the app again. Click on "**Relaunch Assistant**"
+
+Now, you are all set! You can finally use the Google Assistant Unofficial Desktop Client and customize it the way you want... 😉
 
 > ## Other References
 >
