@@ -146,6 +146,11 @@
 
 Now, you are all set! You can finally use the Google Assistant Unofficial Desktop Client and customize it the way you want... 😉
 
+# Experiencing an issue?
+
+You can check out the [Frequently Asked Questions (FAQ)](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/wiki/Frequently-Asked-Questions-(FAQ)).
+
+
 > ## Other References
 >
 > **Device Registration using UI:**
