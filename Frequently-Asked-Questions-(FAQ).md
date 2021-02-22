@@ -26,6 +26,21 @@ Why does the "Get Token" screen fail saving tokens?
   - Saved Tokens Path might point to a privileged location _(like C: in windows or /usr/local in *nix based systems)_ requiring Admin/Superuser access. In this case, try to change the Key File path and Saved Tokens File path to a location which might not require escalated privileges to access.
   - Exhausted the daily limit of requesting the tokens in which case trying it the next day might work.
 
+Why do I get "TypeError: Error processing argument at index 0"?
+===============================================================
+
+![TypeError: Error processing argument at index 0 - Screenshot](https://user-images.githubusercontent.com/62511588/108703779-5ec52300-750b-11eb-844d-76feec985f9d.png)
+
+This is a bug which occurs due to passing a floating-point number to the `setPosition()` function, which is calculated based on your screen resolution. The fix to this issue has not been released yet. Thus, the only way to get around it for the time-being would be to change the display resolution (which would not be ideal) or clone this repo (via `git clone`) and build it yourself (see [How to Build](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client#how-to-build)) since it has been fixed within the source but not released yet.
+
+How do I fix "invalid_grant" error?
+===================================
+
+Just delete the Tokens file (as specified by Saved Tokens Path) and in the next launch, you will be presented with **"Get Token!"** screen. After pasting and submitting the authorization code, you are good to go :)
+
+!["invalid_grant" error screen](https://i.imgur.com/Y2Dyhr2.png)
+![Blank screen with Google Assistant logo](https://i.imgur.com/r3qVyJ9.png)
+
 Why does the setting button not work?
 =====================================
 
