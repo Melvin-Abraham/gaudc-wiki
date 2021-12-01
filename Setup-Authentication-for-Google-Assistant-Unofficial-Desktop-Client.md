@@ -142,10 +142,35 @@
 
 Now, you are all set! You can finally use the Google Assistant Unofficial Desktop Client and customize it the way you want... 😉
 
+# Enabling Personal Results (Optional)
+
+Personal results are results that are fetched from Google Services like Gmail, Google Calendar, Google Photos, etc. These results are not shown by default as they might be part of user activity and personal data. If you want the assistant to show you your personal results when asked for it, you must explicitly enable it. Below are the steps to help you enable personal results.
+
+1. Once your assistant app is ready to use after having followed the proper steps, you must ask the assistant specific queries to trigger personal results. For example, "What's my name?", "Show me my photos" or "What's on my calendar next?".
+
+![Trigger Personal Result Query](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/assist-personal-results-permission.png)
+
+2. As mentioned in the above screenshot, you might receive a notification to turn on personal results. Tap on the notification.
+
+![Allow Personal Answers - Phone Notification](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/phone-allow-personal-answers-notification.jpeg)
+
+3. You will come across a screen like the one below. Tap on **"Device Name"**. _(Do not toggle Personal Results right away)_
+
+![Allow Personal Answers - Initial Screen](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/phone-allow-personal-answers-screen.jpeg)
+
+4. Now, enter any device name, say, "G Assist" and tap on **"OK"**.
+
+![Allow Personal Answers - Device Name Prompt](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/phone-allow-personal-answers-device-name.jpeg)
+
+5. After the device name has been set, tap on **"Personal Results"** to enable personal results.
+
+![Allow Personal Answers - Personal Results Toggle](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/blob/master/images/Wiki/phone-allow-personal-answers-toggle.jpeg)
+
+That's it. Now, you can ask the assistant to show your personal results. If you are still prompted to allow personal results, that probably means that personal results could not be enabled in your current project. In this case, you might have to [start afresh and create a new actions project](#device-registration) if you want to enable this feature.
+
 # Experiencing an issue?
 
 You can check out the [Frequently Asked Questions (FAQ)](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/wiki/Frequently-Asked-Questions-(FAQ)).
-
 
 # Other References
 
