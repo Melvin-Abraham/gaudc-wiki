@@ -26,7 +26,7 @@
 
     ![Register Model](./assets/register-model.png)
 
-8. Now, after you have created a model, you will be asked to download the credentials. Click on "**Download OAuth 2.0 credentials**"
+8. Now, after you have created a model, you will be asked to download the credentials. Skip this by clicking on **Next**.
 
     ![Download Credentials](./assets/download-credentials.png)
 
@@ -95,6 +95,38 @@
 17. Under "*Add Users*", type the email address of the Gmail account that you will use to authenticate (preferably your current Gmail account). You can add multiple Gmail accounts by adding a comma after each of the Gmail accounts.
 
     ![Type Gmail account email address for authentication](./assets/add-users-sidebar.png)
+
+## Configure Credentials
+
+1. Select **Credentials** from the sidebar. Then, under the **OAuth 2.0 Client IDs**, click on **Web Client** to edit the web client credentials.
+
+    ![Credentials Page](./assets/cred-page.png)
+
+2. Update the redirct URI under the **Authorized redirect URIs** section to:
+
+    ```
+    https://localhost:5754/auth/handler
+    ```
+
+    ![Updated Redirect URI](./assets/cred-config-redirect-uri.png)
+
+3. Now, click on **Save**. This will redirect you back to the credentials page.
+
+4. Click on **Web Client** *again* in order to reset the client secret.
+
+5. Click on **Reset Secret** on the top. This will display a popup for confirmation. Click on **Reset** to confirm.
+
+    ![Reset Client Secret](./assets/cred-config-reset-secret.png)
+
+6. Click on **Save** again.
+
+7. Now, click on the download button against **Web Client**
+
+    ![Credential Download Button Click](./assets/cred-download.png)
+
+8. This will open a popup dialog. Click on **Download JSON** button. This is your **OAuth 2.0 Credential**.
+
+    ![Credential Download Dialog Popup](./assets/cred-download-dialog.png)
 
 ## Setting authentication in the app
 
