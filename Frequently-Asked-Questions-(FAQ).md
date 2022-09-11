@@ -26,6 +26,24 @@ Why does the "Get Token" screen fail saving tokens?
 
   Until the next version is released with the bug fixed, you can either clone this project and build it yourself or if you do not want to build it yourself, you can _temporarily_ disable **Settings** > **Conversation** > **Enable microphone on application startup**, relaunch assistant and let the assistant save the tokens after which you can enable the setting again.
 
+Why am I getting "Authentication Failure"?
+==========================================
+
+![Authentication Failure in Assistant](./assets/FAQ/assist-auth-failure.png)
+
+This could be due to using the _Desktop_ type OAuth Credential (as per the [old documentation](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/wiki/Setup-Authentication-for-Google-Assistant-Unofficial-Desktop-Client/a01ab0e5646edfa0cea769c06d9471e5597016db)). You must now instead use **Web client credentials**. You may refer to [Configure Credentials Guide](./Setup-Authentication-for-Google-Assistant-Unofficial-Desktop-Client.md#configure-credentials)
+
+> You may also refer to this linked issue: [#671: Authentication Failure](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/issues/671)
+
+Fix _"Unable to process request due to missing initial state"_ or _"localhost refused to connect"_
+==================================================================================================
+
+> Applicable only when using Web client credentials
+
+![Missing Initial State error when reqesting auth code](./assets/FAQ/missing-initial-state-err.png)
+
+If you are trying to request Authorization Code to be pasted in the "Get Token" screen but instead get "Unable to process request due to missing initial state" or "localhost refused to connect" error in the page instead, you would need to perform a minor workaround by grabbing the Auth code from the URL. You may refer to [#671: Authentication Failure (comment)](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/issues/671#issuecomment-1072699291)
+
 Why do I get "TypeError: Error processing argument at index 0"?
 ===============================================================
 
