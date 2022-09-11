@@ -18,16 +18,18 @@ Also, make sure you are using the same Google account to authenticate whose Gmai
 Why does the "Get Token" screen fail saving tokens?
 ===================================================
 
-- If you encounter **"Error: Tried calling start() before the ready event!"** and click on ignore and then try to paste authentication code followed by clicking on "Submit", nothing would happen (only as of version `1.0.0-rc.2`).
-
-  Until the next version is released with the bug fixed, you can either clone this project and build it yourself or if you do not want to build it yourself, you can _temporarily_ disable **Settings** > **Conversation** > **Enable microphone on application startup**, relaunch assistant and let the assistant save the tokens after which you can enable the setting again.
-
 - If you get **"Failed to get tokens"** error, you might have one of the following issues:
   - Saved Tokens Path might point to a privileged location _(like C: in windows or /usr/local in *nix based systems)_ requiring Admin/Superuser access. In this case, try to change the Key File path and Saved Tokens File path to a location which might not require escalated privileges to access.
   - Exhausted the daily limit of requesting the tokens in which case trying it the next day might work.
 
+- _[Applies to versions below `1.0.0`]_ If you encounter **"Error: Tried calling start() before the ready event!"** and click on ignore and then try to paste authentication code followed by clicking on "Submit", nothing would happen (only as of version `1.0.0-rc.2`).
+
+  Until the next version is released with the bug fixed, you can either clone this project and build it yourself or if you do not want to build it yourself, you can _temporarily_ disable **Settings** > **Conversation** > **Enable microphone on application startup**, relaunch assistant and let the assistant save the tokens after which you can enable the setting again.
+
 Why do I get "TypeError: Error processing argument at index 0"?
 ===============================================================
+
+> This applies to versions below `v1.0.0`
 
 ![TypeError: Error processing argument at index 0 - Screenshot](./assets/FAQ/display-typeerror.png)
 
@@ -35,6 +37,8 @@ This is a bug which occurs due to passing a floating-point number to the `setPos
 
 How do I fix "invalid_grant" error?
 ===================================
+
+> This applies to versions below `v1.0.0`
 
 Just delete the Tokens file (as specified by Saved Tokens Path) and in the next launch, you will be presented with **"Get Token!"** screen. After pasting and submitting the authorization code, you are good to go :)
 
