@@ -29,7 +29,7 @@ Why does the "Get Token" screen fail saving tokens?
 Why do I get "TypeError: Error processing argument at index 0"?
 ===============================================================
 
-![TypeError: Error processing argument at index 0 - Screenshot](https://user-images.githubusercontent.com/62511588/108703779-5ec52300-750b-11eb-844d-76feec985f9d.png)
+![TypeError: Error processing argument at index 0 - Screenshot](./assets/FAQ/display-typeerror.png)
 
 This is a bug which occurs due to passing a floating-point number to the `setPosition()` function, which is calculated based on your screen resolution. The fix to this issue has not been released yet. Thus, the only way to get around it for the time-being would be to change the display resolution (which would not be ideal) or clone this repo (via `git clone`) and build it yourself (see [How to Build](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client#how-to-build)) since it has been fixed within the source but not released yet.
 
@@ -38,15 +38,15 @@ How do I fix "invalid_grant" error?
 
 Just delete the Tokens file (as specified by Saved Tokens Path) and in the next launch, you will be presented with **"Get Token!"** screen. After pasting and submitting the authorization code, you are good to go :)
 
-!["invalid_grant" error screen](https://i.imgur.com/Y2Dyhr2.png)
-![Blank screen with Google Assistant logo](https://i.imgur.com/r3qVyJ9.png)
+!["invalid_grant" error screen](./assets/FAQ/invalid-grant.png)
+![Blank screen with Google Assistant logo](./assets/FAQ/invalid-grant-2.png)
 
 Why does the setting button not work?
 =====================================
 
 If you are in the Welcome screen as below, you will have to click through **"Get Started"** and **"Proceed"** button before you can access the settings. The reason being when you launch the app for the first time, no config file is created causing errors when saving settings. Thus, the settings button is intentionally disabled.
 
-![Welcome Screen](https://user-images.githubusercontent.com/26056183/107728586-7e429b80-6d14-11eb-98d5-f0ff63891702.png)
+![Welcome Screen](./assets/FAQ/assist-welcome-screen.png)
 
 Have issues that are not listed here?
 =====================================
