@@ -1,0 +1,27 @@
+name: publish-wiki
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACTIONS_PAT }}
+          fetch-depth: 0
+
+      - name: Add GAUDC wiki repo as remote
+        env:
+          GAUDC_REPO: Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client
+        run: |
+          git remote add wiki https://${{secrets.ACTIONS_PAT}}@github.com/${GAUDC_REPO}.wiki.git
+          git remote -v
+
+      - name: Publish wiki to GAUDC repo
+        run: git push wiki master
