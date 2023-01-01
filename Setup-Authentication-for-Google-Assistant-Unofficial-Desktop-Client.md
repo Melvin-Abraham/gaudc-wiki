@@ -105,7 +105,7 @@
 2. Update the redirct URI under the **Authorized redirect URIs** section to:
 
     ```
-    https://localhost:5754/auth/handler
+    http://localhost:5754/auth/handler
     ```
 
     ![Updated Redirect URI](./assets/cred-config-redirect-uri.png)
