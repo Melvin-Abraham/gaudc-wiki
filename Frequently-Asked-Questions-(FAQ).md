@@ -44,6 +44,13 @@ Fix _"Unable to process request due to missing initial state"_ or _"localhost re
 
 If you are trying to request Authorization Code to be pasted in the "Get Token" screen but instead get "Unable to process request due to missing initial state" or "localhost refused to connect" error in the page instead, you would need to perform a minor workaround by grabbing the Auth code from the URL. You may refer to [#671: Authentication Failure (comment)](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/issues/671#issuecomment-1072699291)
 
+Why am I getting SSL Protocol Error when assistant opens localhost?
+===================================================================
+
+![SSL Protocol Error when navigating to localhost](./assets/FAQ/localhost-ssl-error.png)
+
+This could be because the redirect URI set in Google Cloud uses `https` instead of `http` for `localhost`. Although in some cases it works, it would cause issues in other cases. In order to fix this issue, head on to [Cloud Console](https://console.cloud.google.com/) and navigate to **"Credentials"** within your project. Now, under **"OAuth 2.0 Client IDs"** select **"Web Client"**. Now replace the redirect URI under **"Authorized redirect URIs"** to `http://localhost:5754/auth/handler` and save it. After that you must re-download your OAuth credentials by navigating to **"Web Client"** credentials and clicking on **"Download JSON"**. You may refer to the updated [Configure Credentials](https://github.com/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client/wiki/Setup-Authentication-for-Google-Assistant-Unofficial-Desktop-Client#configure-credentials) guide.
+
 Why do I get "TypeError: Error processing argument at index 0"?
 ===============================================================
 
